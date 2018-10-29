@@ -28,7 +28,7 @@ void print(int *a, int n);
 int main(int argc, char **argv) {
 
   /* parse input */
-  if (argc != 3) {
+  if ((argc != 2) && (argc !=3)) {
     printf("Usage: %s q\n  where n=2^q is problem size (power of two)\n", 
 	   argv[0]);
     exit(1);
@@ -43,12 +43,15 @@ int main(int argc, char **argv) {
   int *a = (int *) malloc(n * sizeof(int));
 
   /* initialize vector */
-  int seed = atoi(argv[2]);
-  srand(seed);
+  if (argc == 3){
+      int seed = atoi(argv[2]);
+      srand(seed);
+  }
+  
   init(a, n);
 
   /* print vector */
-  //  print(a, n); 
+  // print(a, n); 
   
   /* sort elements in original order */
   gettimeofday (&startwtime, NULL);
