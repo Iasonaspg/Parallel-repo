@@ -24,7 +24,7 @@ void print(int *a, int n);
 int main(int argc, char **argv){
 
     //Parse input
-    if (argc != 3){
+    if (argc != 4){
         printf("Invalid number of arguments\n");
         exit(1);
     }
@@ -38,7 +38,9 @@ int main(int argc, char **argv){
     char * sworkers = (char *) malloc(sizeof(int));
     sprintf(sworkers, "%d", workers);
     int y = __cilkrts_set_param("nworkers", sworkers);
-    printf("%d", y);
+    if (y == 0){
+      printf("Valid number of workers\n");
+    }
 
     /* variables to hold execution time */
     struct timeval startwtime, endwtime;
@@ -48,8 +50,13 @@ int main(int argc, char **argv){
     int n  = 1<<atoi(argv[1]);
     int *a = (int *) malloc(n * sizeof(int));
 
+
+    int seed = atoi(argv[3]);
+    srand(seed);
     /* initialize vector */
     init(a, n);
+
+    // print(a, n); 
 
     /* sort elements */
     gettimeofday(&startwtime, NULL);

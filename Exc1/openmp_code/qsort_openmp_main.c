@@ -23,7 +23,7 @@ void print(int *a, int n);
 int main(int argc, char **argv){
 
     //Parse input
-    if (argc != 3){
+    if (argc != 4){
         printf("Invalid number of arguments\n");
         exit(1);
     }
@@ -44,8 +44,11 @@ int main(int argc, char **argv){
     int *a = (int *) malloc(n*sizeof(int));
 
     /* initialize vector */
+    int seed = atoi(argv[3]);
+    srand(seed);
     init(a, n);
 
+    
     /* sort elements */
     gettimeofday(&startwtime, NULL);
     #pragma omp parallel
