@@ -22,7 +22,7 @@ void print(int *a, int n);
 int main(int argc, char **argv){
 
   //Parse input
-  if (argc != 4){
+  if ((argc != 4) && (argc != 3)){
       printf("Invalid number of arguments\n");
       exit(1);
   }
@@ -40,11 +40,16 @@ int main(int argc, char **argv){
   int n  = 1<<atoi(argv[1]);
   int *a = (int *) malloc(n * sizeof(int));
 
-  int seed = atoi(argv[3]);
-  srand(seed);
-  
+  if (argc == 4){
+      int seed = atoi(argv[3]);
+      srand(seed);
+  }
+
+
   /* initialize vector */
   init(a, n);
+
+  // print(a,n);
 
   thread_data *tdata;
 
