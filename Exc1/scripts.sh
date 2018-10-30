@@ -2,8 +2,8 @@
 
 for j in *.out
 do
-    echo "$j results:" >> results_$j
-    echo "==========================================" >> results_$j
+    echo "$j results:" >> ./results/results_$j
+    echo "==========================================" >> ./results/results_$j
     for i in {12..24}
     do
         for x in {0..8}
@@ -16,20 +16,20 @@ do
             fi
             for z in $(seq 0 $end)
             do
-                printf "%s\t\t" "Input size:" $i >> results_$j
-                ./$j $i $x 2 >> results_$j
-                printf "\n" >> results_$j
+                printf "%s\t\t" "Input size:" $i >> ./results/results_$j
+                ./$j $i $x 2 >> ./results/results_$j
+                printf "\n" >> ./results/results_$j
             done
         done
      done
 done
 
-echo "Sequential results:" >> results.txt
-echo "==========================================" >> results.txt
+echo "Sequential results:" >> ./results/results.txt
+echo "==========================================" >> ./results/results.txt
 
 for j in {12..24}
 do
-    printf "%s\t\t" "Input size:" $j >> results.txt
-    ./qsort $j 2 >> results.txt
-    printf "\n" >> results.txt
+    printf "%s\t\t" "Input size:" $j >> ./results/results.txt
+    ./qsort $j 2 >> ./results/results.txt
+    printf "\n" >> ./results/results.txt
 done
