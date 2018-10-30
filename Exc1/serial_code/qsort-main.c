@@ -14,15 +14,17 @@
 #include <time.h>
 #include "qsort-sequential.h"
 #include <assert.h>
+#include <string.h>
+
 
 /* local function declarations */
 int  test( int *a, int n);
 void init( int *a, int n);
 void print(int *a, int n);
 
-// int cmpfunc (const void * a, const void * b) {
-//     return ( *(int*)a - *(int*)b );
-// }
+int cmpfunc (const void * a, const void * b) {
+    return ( *(int*)a - *(int*)b );
+}
 
 /* --- Entry POINT --- */
 int main(int argc, char **argv) {
@@ -36,11 +38,12 @@ int main(int argc, char **argv) {
 
   /* variables to hold execution time */
   struct timeval startwtime, endwtime;
-  double seq_time;
+  double seq_time, seq_time1;
  
   /* initiate vector of random integers */
   int n  = 1<<atoi(argv[1]);
   int *a = (int *) malloc(n * sizeof(int));
+  int *b = (int *) malloc(n* sizeof(int));
 
   /* initialize vector */
   if (argc == 3){
@@ -50,17 +53,28 @@ int main(int argc, char **argv) {
   
   init(a, n);
 
+  memcpy(b, a, n*sizeof(int));
+  
+
   /* print vector */
-  // print(a, n); 
+  // print(a, n);
+  // print(b,n); 
   
   /* sort elements in original order */
   gettimeofday (&startwtime, NULL);
   qsort_seq(a, n);
-  // qsort(a, n, sizeof(int), cmpfunc);
   gettimeofday (&endwtime, NULL);
 
   /* get time in seconds */
   seq_time = (double)((endwtime.tv_usec - startwtime.tv_usec)/1.0e6
+                      + endwtime.tv_sec - startwtime.tv_sec);
+
+  
+  gettimeofday (&startwtime, NULL);
+  qsort(b, n, sizeof(int), cmpfunc);
+  gettimeofday (&endwtime, NULL);
+
+  seq_time1 = (double)((endwtime.tv_usec - startwtime.tv_usec)/1.0e6
                       + endwtime.tv_sec - startwtime.tv_sec);
 
   /* validate result */
@@ -72,7 +86,8 @@ int main(int argc, char **argv) {
   /* print(a, n); */
   
   /* print execution time */
-  printf("Sequential wall clock time: %f sec\n", seq_time);
+  printf("\tSequential wall clock time: %f sec\n", seq_time);
+  printf("\tSequential wall clock time with standard qsort: %f sec\n", seq_time1);
 
   /* exit */
   return 0;
