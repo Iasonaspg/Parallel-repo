@@ -41,6 +41,9 @@ int main(int argc, char **argv){
     if (y == 0){
       printf("Valid number of workers\n");
     }
+    else{
+      printf("Not valid number of workers\n");
+    }
 
     /* variables to hold execution time */
     struct timeval startwtime, endwtime;
@@ -71,7 +74,7 @@ int main(int argc, char **argv){
 
     /* validate result */
     int pass = test(a, n);
-    printf(" TEST %s\n", (pass) ? "PASSed" : "FAILed");
+    printf("TEST %s\n", (pass) ? "PASSed" : "FAILed");
     assert( pass != 0 );
 
     /* print execution time */
