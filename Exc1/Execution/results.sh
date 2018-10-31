@@ -4,9 +4,9 @@ for j in *.out
 do
     echo "$j results:" >> ./results/results_$j
     echo "==========================================" >> ./results/results_$j
-    for i in {12..24}
+    for i in {16..24}
     do
-        for x in {0..8}
+        for x in {1..8}
         do
             if [ "$i" == "24" ]
             then
@@ -27,7 +27,7 @@ done
 echo "Sequential results:" >> ./results/results.txt
 echo "==========================================" >> ./results/results.txt
 
-for j in {12..24}
+for j in {16..24}
 do
     printf "%s\t\t" "Input size:" $j >> ./results/results.txt
     ./qsort $j 2 >> ./results/results.txt
