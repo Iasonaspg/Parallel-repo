@@ -2,353 +2,353 @@ iccilk.out results:
 ==========================================
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.005692 sec
+	Parallel wall clock time using 2 threads: 0.005703 sec
 
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.002815 sec
+	Parallel wall clock time using 4 threads: 0.002971 sec
 
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.003080 sec
+	Parallel wall clock time using 8 threads: 0.003341 sec
 
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.003927 sec
+	Parallel wall clock time using 16 threads: 0.003834 sec
 
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.030625 sec
+	Parallel wall clock time using 32 threads: 0.030453 sec
 
 Input size:		16		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.039882 sec
+	Parallel wall clock time using 64 threads: 0.012202 sec
 
 Input size:		16		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.002399 sec
+	Parallel wall clock time using 128 threads: 0.002210 sec
 
 Input size:		16		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.002225 sec
+	Parallel wall clock time using 256 threads: 0.002742 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.009467 sec
+	Parallel wall clock time using 2 threads: 0.013139 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.005744 sec
+	Parallel wall clock time using 4 threads: 0.005442 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.006501 sec
+	Parallel wall clock time using 8 threads: 0.005932 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.005822 sec
+	Parallel wall clock time using 16 threads: 0.005025 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.053113 sec
+	Parallel wall clock time using 32 threads: 0.027404 sec
 
 Input size:		17		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.090503 sec
+	Parallel wall clock time using 64 threads: 0.059224 sec
 
 Input size:		17		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.004197 sec
+	Parallel wall clock time using 128 threads: 0.005215 sec
 
 Input size:		17		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.005201 sec
+	Parallel wall clock time using 256 threads: 0.004777 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.018101 sec
+	Parallel wall clock time using 2 threads: 0.016902 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.012345 sec
+	Parallel wall clock time using 4 threads: 0.012963 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.009699 sec
+	Parallel wall clock time using 8 threads: 0.008637 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.039416 sec
+	Parallel wall clock time using 16 threads: 0.040390 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.013314 sec
+	Parallel wall clock time using 32 threads: 0.049946 sec
 
 Input size:		18		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.032882 sec
+	Parallel wall clock time using 64 threads: 0.080519 sec
 
 Input size:		18		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.008547 sec
+	Parallel wall clock time using 128 threads: 0.008758 sec
 
 Input size:		18		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.008735 sec
+	Parallel wall clock time using 256 threads: 0.009676 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.034416 sec
+	Parallel wall clock time using 2 threads: 0.034021 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.027420 sec
+	Parallel wall clock time using 4 threads: 0.020202 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.018544 sec
+	Parallel wall clock time using 8 threads: 0.018971 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.031238 sec
+	Parallel wall clock time using 16 threads: 0.034701 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.053377 sec
+	Parallel wall clock time using 32 threads: 0.075216 sec
 
 Input size:		19		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.049343 sec
+	Parallel wall clock time using 64 threads: 0.064985 sec
 
 Input size:		19		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.022580 sec
+	Parallel wall clock time using 128 threads: 0.023090 sec
 
 Input size:		19		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.022893 sec
+	Parallel wall clock time using 256 threads: 0.022409 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.064311 sec
+	Parallel wall clock time using 2 threads: 0.061276 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.040122 sec
+	Parallel wall clock time using 4 threads: 0.044501 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.035059 sec
+	Parallel wall clock time using 8 threads: 0.033612 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.053728 sec
+	Parallel wall clock time using 16 threads: 0.033567 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.051899 sec
+	Parallel wall clock time using 32 threads: 0.066734 sec
 
 Input size:		20		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.110948 sec
+	Parallel wall clock time using 64 threads: 0.111529 sec
 
 Input size:		20		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.036892 sec
+	Parallel wall clock time using 128 threads: 0.037687 sec
 
 Input size:		20		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.035748 sec
+	Parallel wall clock time using 256 threads: 0.037187 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.126942 sec
+	Parallel wall clock time using 2 threads: 0.128638 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.080718 sec
+	Parallel wall clock time using 4 threads: 0.078195 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.063519 sec
+	Parallel wall clock time using 8 threads: 0.062382 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.078975 sec
+	Parallel wall clock time using 16 threads: 0.076807 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.129913 sec
+	Parallel wall clock time using 32 threads: 0.084634 sec
 
 Input size:		21		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.215340 sec
+	Parallel wall clock time using 64 threads: 0.161970 sec
 
 Input size:		21		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.063929 sec
+	Parallel wall clock time using 128 threads: 0.064254 sec
 
 Input size:		21		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.066034 sec
+	Parallel wall clock time using 256 threads: 0.064106 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.261012 sec
+	Parallel wall clock time using 2 threads: 0.262066 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.158286 sec
+	Parallel wall clock time using 4 threads: 0.159482 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.126197 sec
+	Parallel wall clock time using 8 threads: 0.122395 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.141801 sec
+	Parallel wall clock time using 16 threads: 0.132096 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.151072 sec
+	Parallel wall clock time using 32 threads: 0.155401 sec
 
 Input size:		22		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.335986 sec
+	Parallel wall clock time using 64 threads: 0.296800 sec
 
 Input size:		22		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.131359 sec
+	Parallel wall clock time using 128 threads: 0.127098 sec
 
 Input size:		22		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.132319 sec
+	Parallel wall clock time using 256 threads: 0.131819 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 0.549568 sec
+	Parallel wall clock time using 2 threads: 0.533739 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.337711 sec
+	Parallel wall clock time using 4 threads: 0.313993 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.252062 sec
+	Parallel wall clock time using 8 threads: 0.247813 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.248571 sec
+	Parallel wall clock time using 16 threads: 0.248780 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.483280 sec
+	Parallel wall clock time using 32 threads: 0.345730 sec
 
 Input size:		23		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 0.799092 sec
+	Parallel wall clock time using 64 threads: 0.753182 sec
 
 Input size:		23		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.263428 sec
+	Parallel wall clock time using 128 threads: 0.247491 sec
 
 Input size:		23		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.250901 sec
+	Parallel wall clock time using 256 threads: 0.244347 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 1.099564 sec
+	Parallel wall clock time using 2 threads: 1.103044 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 1.089742 sec
+	Parallel wall clock time using 2 threads: 1.097400 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 2 threads: 1.091663 sec
+	Parallel wall clock time using 2 threads: 1.100094 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.645841 sec
+	Parallel wall clock time using 4 threads: 0.653501 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.643588 sec
+	Parallel wall clock time using 4 threads: 0.650628 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 4 threads: 0.640361 sec
+	Parallel wall clock time using 4 threads: 0.659296 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.519229 sec
+	Parallel wall clock time using 8 threads: 0.528183 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.523712 sec
+	Parallel wall clock time using 8 threads: 0.527189 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 8 threads: 0.526434 sec
+	Parallel wall clock time using 8 threads: 0.528112 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.587179 sec
+	Parallel wall clock time using 16 threads: 0.538114 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.568051 sec
+	Parallel wall clock time using 16 threads: 0.542926 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 16 threads: 0.525499 sec
+	Parallel wall clock time using 16 threads: 0.537180 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.888772 sec
+	Parallel wall clock time using 32 threads: 0.647270 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.749253 sec
+	Parallel wall clock time using 32 threads: 0.994205 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 32 threads: 0.789529 sec
+	Parallel wall clock time using 32 threads: 0.960346 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 1.525110 sec
+	Parallel wall clock time using 64 threads: 1.646515 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 1.592541 sec
+	Parallel wall clock time using 64 threads: 1.901222 sec
 
 Input size:		24		Valid number of workers
 TEST PASSed
-	Parallel wall clock time using 64 threads: 1.366304 sec
+	Parallel wall clock time using 64 threads: 1.858455 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.524020 sec
+	Parallel wall clock time using 128 threads: 0.527987 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.524801 sec
+	Parallel wall clock time using 128 threads: 0.532512 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 128 threads: 0.524639 sec
+	Parallel wall clock time using 128 threads: 0.526059 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.515603 sec
+	Parallel wall clock time using 256 threads: 0.531699 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.523709 sec
+	Parallel wall clock time using 256 threads: 0.534293 sec
 
 Input size:		24		Not valid number of workers
 TEST PASSed
-	Parallel wall clock time using 256 threads: 0.524798 sec
+	Parallel wall clock time using 256 threads: 0.530141 sec
 
