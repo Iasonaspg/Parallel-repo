@@ -58,7 +58,7 @@ void *qsort_par(void *data) {
     td->length = p;
            
     
-    if ((lvl < threads) && (td->length > 10000)){
+    if ((lvl < threads) && (td->length > 50000)){
       pthread_t thread2;
       pthread_mutex_lock(&mutexsum);
       ++lvl;
