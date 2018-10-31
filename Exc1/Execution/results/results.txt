@@ -1,38 +1,38 @@
 Sequential results:
 ==========================================
 Input size:		16		 TEST PASSed
-	Sequential wall clock time: 0.008948 sec
-	Sequential wall clock time with standard qsort: 0.007535 sec
+	Sequential wall clock time: 0.007255 sec
+	Sequential wall clock time with standard qsort: 0.008438 sec
 
 Input size:		17		 TEST PASSed
-	Sequential wall clock time: 0.011663 sec
-	Sequential wall clock time with standard qsort: 0.015245 sec
+	Sequential wall clock time: 0.013290 sec
+	Sequential wall clock time with standard qsort: 0.015040 sec
 
 Input size:		18		 TEST PASSed
-	Sequential wall clock time: 0.022988 sec
-	Sequential wall clock time with standard qsort: 0.031678 sec
+	Sequential wall clock time: 0.022877 sec
+	Sequential wall clock time with standard qsort: 0.034572 sec
 
 Input size:		19		 TEST PASSed
-	Sequential wall clock time: 0.045315 sec
-	Sequential wall clock time with standard qsort: 0.065975 sec
+	Sequential wall clock time: 0.046759 sec
+	Sequential wall clock time with standard qsort: 0.067988 sec
 
 Input size:		20		 TEST PASSed
-	Sequential wall clock time: 0.094982 sec
-	Sequential wall clock time with standard qsort: 0.138935 sec
+	Sequential wall clock time: 0.095962 sec
+	Sequential wall clock time with standard qsort: 0.141729 sec
 
 Input size:		21		 TEST PASSed
-	Sequential wall clock time: 0.199839 sec
-	Sequential wall clock time with standard qsort: 0.292870 sec
+	Sequential wall clock time: 0.201627 sec
+	Sequential wall clock time with standard qsort: 0.293509 sec
 
 Input size:		22		 TEST PASSed
-	Sequential wall clock time: 0.424828 sec
-	Sequential wall clock time with standard qsort: 0.613041 sec
+	Sequential wall clock time: 0.422152 sec
+	Sequential wall clock time with standard qsort: 0.617295 sec
 
 Input size:		23		 TEST PASSed
-	Sequential wall clock time: 0.871051 sec
-	Sequential wall clock time with standard qsort: 1.283692 sec
+	Sequential wall clock time: 0.913607 sec
+	Sequential wall clock time with standard qsort: 1.305526 sec
 
 Input size:		24		 TEST PASSed
-	Sequential wall clock time: 1.865343 sec
-	Sequential wall clock time with standard qsort: 2.686237 sec
+	Sequential wall clock time: 2.019635 sec
+	Sequential wall clock time with standard qsort: 2.962898 sec
 
