@@ -1,218 +1,266 @@
 icopenmp.out results:
 ==========================================
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.006908 sec
+	Parallel wall clock time using 2 threads: 0.005220 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.002726 sec
+	Parallel wall clock time using 4 threads: 0.003378 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.006967 sec
+	Parallel wall clock time using 8 threads: 0.001913 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.031174 sec
+	Parallel wall clock time using 16 threads: 0.018831 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.064965 sec
+	Parallel wall clock time using 32 threads: 0.069837 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.196081 sec
+	Parallel wall clock time using 64 threads: 0.146408 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.232434 sec
+	Parallel wall clock time using 128 threads: 0.241604 sec
 
 Input size:		16		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 0.472692 sec
+	Parallel wall clock time using 256 threads: 0.727525 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.006990 sec
+	Parallel wall clock time using 2 threads: 0.005693 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.004662 sec
+	Parallel wall clock time using 4 threads: 0.004823 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.006605 sec
+	Parallel wall clock time using 8 threads: 0.006571 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.007450 sec
+	Parallel wall clock time using 16 threads: 0.028008 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.056610 sec
+	Parallel wall clock time using 32 threads: 0.052467 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.148749 sec
+	Parallel wall clock time using 64 threads: 0.104338 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.351558 sec
+	Parallel wall clock time using 128 threads: 0.231324 sec
 
 Input size:		17		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 0.414391 sec
+	Parallel wall clock time using 256 threads: 0.413246 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.012732 sec
+	Parallel wall clock time using 2 threads: 0.011763 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.007665 sec
+	Parallel wall clock time using 4 threads: 0.010671 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.007136 sec
+	Parallel wall clock time using 8 threads: 0.006443 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.028448 sec
+	Parallel wall clock time using 16 threads: 0.010045 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.131140 sec
+	Parallel wall clock time using 32 threads: 0.071242 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.285245 sec
+	Parallel wall clock time using 64 threads: 0.128753 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.200419 sec
+	Parallel wall clock time using 128 threads: 0.373471 sec
 
 Input size:		18		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 0.424542 sec
+	Parallel wall clock time using 256 threads: 0.687601 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.026311 sec
+	Parallel wall clock time using 2 threads: 0.025750 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.015749 sec
+	Parallel wall clock time using 4 threads: 0.018570 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.016008 sec
+	Parallel wall clock time using 8 threads: 0.014091 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.035140 sec
+	Parallel wall clock time using 16 threads: 0.019849 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.073166 sec
+	Parallel wall clock time using 32 threads: 0.058307 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.151430 sec
+	Parallel wall clock time using 64 threads: 0.138581 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.195812 sec
+	Parallel wall clock time using 128 threads: 0.336843 sec
 
 Input size:		19		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 0.456606 sec
+	Parallel wall clock time using 256 threads: 0.475310 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.050565 sec
+	Parallel wall clock time using 2 threads: 0.052924 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.033890 sec
+	Parallel wall clock time using 4 threads: 0.034369 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.025429 sec
+	Parallel wall clock time using 8 threads: 0.070189 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.087236 sec
+	Parallel wall clock time using 16 threads: 0.053741 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.075064 sec
+	Parallel wall clock time using 32 threads: 0.138126 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.198025 sec
+	Parallel wall clock time using 64 threads: 0.283576 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.353555 sec
+	Parallel wall clock time using 128 threads: 0.328977 sec
 
 Input size:		20		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 0.527099 sec
+	Parallel wall clock time using 256 threads: 0.496882 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.097965 sec
+	Parallel wall clock time using 2 threads: 0.102758 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.063204 sec
+	Parallel wall clock time using 4 threads: 0.062794 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.046547 sec
+	Parallel wall clock time using 8 threads: 0.047717 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.066184 sec
+	Parallel wall clock time using 16 threads: 0.051710 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.085602 sec
+	Parallel wall clock time using 32 threads: 0.103908 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.362672 sec
+	Parallel wall clock time using 64 threads: 0.209551 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 0.442339 sec
+	Parallel wall clock time using 128 threads: 0.769699 sec
 
 Input size:		21		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 1.350868 sec
+	Parallel wall clock time using 256 threads: 0.977340 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.206762 sec
+	Parallel wall clock time using 2 threads: 0.201561 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.127496 sec
+	Parallel wall clock time using 4 threads: 0.128595 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.098239 sec
+	Parallel wall clock time using 8 threads: 0.103815 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.128019 sec
+	Parallel wall clock time using 16 threads: 0.123472 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.272317 sec
+	Parallel wall clock time using 32 threads: 0.264608 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.361916 sec
+	Parallel wall clock time using 64 threads: 0.498397 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 1.134807 sec
+	Parallel wall clock time using 128 threads: 0.872269 sec
 
 Input size:		22		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 2.366535 sec
+	Parallel wall clock time using 256 threads: 1.776486 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.426166 sec
+	Parallel wall clock time using 2 threads: 0.423178 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.261292 sec
+	Parallel wall clock time using 4 threads: 0.254039 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.197237 sec
+	Parallel wall clock time using 8 threads: 0.207508 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.264784 sec
+	Parallel wall clock time using 16 threads: 0.268154 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.470591 sec
+	Parallel wall clock time using 32 threads: 0.424512 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 0.940309 sec
+	Parallel wall clock time using 64 threads: 0.994854 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 1.919107 sec
+	Parallel wall clock time using 128 threads: 1.592894 sec
 
 Input size:		23		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 3.810540 sec
+	Parallel wall clock time using 256 threads: 3.993289 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 2 threads: 0.871299 sec
+	Parallel wall clock time using 2 threads: 0.864099 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 4 threads: 0.535779 sec
+	Parallel wall clock time using 2 threads: 0.884278 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 8 threads: 0.451284 sec
+	Parallel wall clock time using 2 threads: 0.863921 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 16 threads: 0.706034 sec
+	Parallel wall clock time using 4 threads: 0.524079 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 32 threads: 0.915172 sec
+	Parallel wall clock time using 4 threads: 0.532192 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 64 threads: 1.119234 sec
+	Parallel wall clock time using 4 threads: 0.531235 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 128 threads: 4.084706 sec
+	Parallel wall clock time using 8 threads: 0.441399 sec
 
 Input size:		24		 	TEST PASSed
-	Parallel wall clock time using 256 threads: 8.347544 sec
+	Parallel wall clock time using 8 threads: 0.490740 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 8 threads: 0.534207 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 16 threads: 0.673408 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 16 threads: 0.620630 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 16 threads: 0.714861 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 32 threads: 1.094389 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 32 threads: 0.881834 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 32 threads: 0.942737 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 64 threads: 2.218239 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 64 threads: 1.903367 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 64 threads: 2.170872 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 128 threads: 3.310829 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 128 threads: 4.060221 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 128 threads: 4.211914 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 256 threads: 7.675558 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 256 threads: 10.268975 sec
+
+Input size:		24		 	TEST PASSed
+	Parallel wall clock time using 256 threads: 6.596161 sec
 
