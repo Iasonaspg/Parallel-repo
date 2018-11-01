@@ -22,4 +22,4 @@ If you want to use the same script on your pc follow these steps:
 * Paste the .out executables that you want to test and the *script.sh*
 * Create a new folder in the same directory with the name **results**
 * Execute the command `bash script.sh`
-* The desired results will be inside the *results* folder
+* The desired results will be inside the **results** folder
