@@ -23,3 +23,7 @@ If you want to use the same script on your pc follow these steps:
 * Create a new folder in the same directory with the name **results**
 * Execute the command `bash script.sh`
 * The desired results will be inside the **results** folder
+
+### System Setup
+
+The CPU of the system that the tests took place is an AMD FX-6300 with 6 physical cores and no hyperthreading.
