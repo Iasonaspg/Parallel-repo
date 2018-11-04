@@ -14,7 +14,7 @@ If you want to recompile each program you should use the appropriate Makefile th
 
 ### Results.sh 
 
-*Results.sh* is a shell-script that I created which executes the given programms with an input range of 2^(16-24) array size and 2^(1-8) threads. The produced results are stored in different files that are created by the same script.
+*Results.sh* is a shell-script that I created which executes the given programs with an input range of 2^(16-24) array size and 2^(1-8) threads. The produced results are stored in different files that are created by the same script.
 
 If you want to use the same script on your pc follow these steps:
 
@@ -27,3 +27,7 @@ If you want to use the same script on your pc follow these steps:
 ### System Setup
 
 The CPU of the system that the tests took place is an AMD FX-6300 with 6 physical cores and no hyperthreading.
+
+### Custom seed
+
+In C, rand() function produces a pseudo-random sequence of numbers. That sequence is based on the seed, a number that can be defined through the srand() function. If srand() is not used, the default value is srand(1). The third argument of my algorithm is a custom seed. If we use the same seed across all the three programs, the produced array will be the same and the results will be more accurate.
