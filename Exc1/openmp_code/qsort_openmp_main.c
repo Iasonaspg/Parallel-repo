@@ -32,6 +32,7 @@ int main(int argc, char **argv){
         exit(1);
     }
     
+    /* Set number of threads */
     int num_threads = 1<<atoi(argv[2]);
     omp_set_num_threads(num_threads);
     
@@ -43,7 +44,7 @@ int main(int argc, char **argv){
     int n = 1<<atoi(argv[1]);
     int *a = (int *) malloc(n*sizeof(int));
 
-    /* initialize vector */
+    /* Set custom seed if it is provided */
     if (argc == 4){
       int seed = atoi(argv[3]);
       srand(seed);
@@ -62,7 +63,6 @@ int main(int argc, char **argv){
         qsort_par(a,n);
       }
     }
-    //qsort_par(a, n);
     gettimeofday(&endwtime, NULL);
 
     /* get time in seconds */

@@ -40,6 +40,7 @@ int main(int argc, char **argv){
   int n  = 1<<atoi(argv[1]);
   int *a = (int *) malloc(n * sizeof(int));
 
+  /* Set custom seed if it is provided */
   if (argc == 4){
       int seed = atoi(argv[3]);
       srand(seed);
@@ -51,6 +52,7 @@ int main(int argc, char **argv){
 
   // print(a,n);
 
+  /* Create a struct with our data */
   thread_data *tdata;
 
   tdata = (thread_data *) malloc(sizeof(thread_data));
@@ -63,7 +65,6 @@ int main(int argc, char **argv){
   /* sort elements */
   gettimeofday(&startwtime, NULL);
   qsort_par(tdata);
-
   gettimeofday(&endwtime, NULL);
 
   /* get time in seconds */
