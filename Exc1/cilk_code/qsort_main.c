@@ -53,6 +53,7 @@ int main(int argc, char **argv){
     int n  = 1<<atoi(argv[1]);
     int *a = (int *) malloc(n * sizeof(int));
 
+    /* Use custom seed if it is provided */
     if (argc == 4){
       int seed = atoi(argv[3]);
       srand(seed);
