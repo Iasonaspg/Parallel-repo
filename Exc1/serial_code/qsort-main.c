@@ -45,14 +45,16 @@ int main(int argc, char **argv) {
   int *a = (int *) malloc(n * sizeof(int));
   int *b = (int *) malloc(n* sizeof(int));
 
-  /* initialize vector */
+  /* Set custom seed if it is provided */
   if (argc == 3){
       int seed = atoi(argv[2]);
       srand(seed);
   }
   
+  /* Initialize array */
   init(a, n);
 
+  /* Duplicate the array */
   memcpy(b, a, n*sizeof(int));
   
 
@@ -69,7 +71,7 @@ int main(int argc, char **argv) {
   seq_time = (double)((endwtime.tv_usec - startwtime.tv_usec)/1.0e6
                       + endwtime.tv_sec - startwtime.tv_sec);
 
-  
+  /* Sort using the standard qsort */
   gettimeofday (&startwtime, NULL);
   qsort(b, n, sizeof(int), cmpfunc);
   gettimeofday (&endwtime, NULL);

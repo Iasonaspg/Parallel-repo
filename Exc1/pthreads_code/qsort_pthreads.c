@@ -12,7 +12,7 @@ Email: michailpg@ece.auth.gr
 #include <pthread.h>
 #include "qsort_pthreads.h"
 
-
+/* Global variables */
 int lvl = 0, f = 1, threads;
 pthread_mutex_t mutexsum, mutexsum1;
 
@@ -42,9 +42,12 @@ int partition(int *v, int n) {
 void *qsort_par(void *data) {
 
   thread_data *td = (thread_data *) data;
+  
   if ( f ){
+    //Will execute only once due to flag f
     pthread_mutex_init(&mutexsum, NULL);
     pthread_mutex_init(&mutexsum1, NULL);
+    // The maximum concurrent number of threads that we want
     threads = td->thread_num;
   }
 
@@ -52,6 +55,7 @@ void *qsort_par(void *data) {
 
     
     int p = partition(td->index, td->length);
+    // Create a new struct for the second qsort_par call
     thread_data td1;
     td1.index = &(td->index[p + 1]);
     td1.length = td->length - p -1;
