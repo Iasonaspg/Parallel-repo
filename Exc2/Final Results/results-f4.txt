@@ -1,0 +1,102 @@
+size: 1048576 processes: 4
+Tree construction has begun!
+Vantage point at level-0: (4.5720000,54.0610008)
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+
+
+Time elapsed: 0, 11302 s
+VALIDATION PASSED!
+Values greater than median: 524288
+Values equal to median: 1
+Values lower than median: 524287
+Median: 3.1957889
+
+Greater[0]-0 from master before distribute: 138268
+Lower[0]-0 from master before distribute: 123876
+Greater[1]-0 from master before distribute: 128635
+Lower[1]-0 from master before distribute: 133509
+Greater[2]-0 from master before distribute: 128583
+Lower[2]-0 from master before distribute: 133561
+Greater[3]-0 from master before distribute: 128802
+Lower[3]-0 from master before distribute: 133342
+Distribution is starting
+Distribution from slave has been completed
+Distribution has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Validation of process 2 after distribute has passed
+
+
+Greater[0]-0 from master after distribute: 0
+Lower[0]-0 from master after distribute: 262144
+Greater[1]-0 from master after distribute: 0
+Lower[1]-0 from master after distribute: 262144
+Greater[2]-0 from master after distribute: 262144
+Lower[2]-0 from master after distribute: 0
+Greater[3]-0 from master after distribute: 262144
+Lower[3]-0 from master after distribute: 0
+Validation of process 3 after distribute has passed
+Vantage point at level-1: (2.3350000,51.0279999)
+Validation of process 0 after distribute has passed
+Vantage point at level-1: (4.6939998,53.1189995)
+Validation of process 1 after distribute has passed
+
+
+Time elapsed: 0, 10071 s
+
+
+Time elapsed: 0, 10063 s
+VALIDATION PASSED!
+Values greater than median: 262144
+Values equal to median: 1
+Values lower than median: 262143
+Median: 1.9440142
+
+VALIDATION PASSED!
+Values greater than median: 262144
+Values equal to median: 1
+Values lower than median: 262143
+Median: 1.8308986
+
+Distribution from slave is starting
+Distribution from slave is starting
+Greater[0]-1 from master before distribute: 139297
+Lower[0]-1 from master before distribute: 122847
+Greater[1]-1 from master before distribute: 122847
+Lower[1]-1 from master before distribute: 139297
+Distribution is starting
+Greater[0]-1 from master before distribute: 129880
+Lower[0]-1 from master before distribute: 132264
+Greater[1]-1 from master before distribute: 132264
+Lower[1]-1 from master before distribute: 129880
+Distribution is starting
+Distribution has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution has been completed
+
+
+Greater[0]-1 from master after distribute: 0
+Lower[0]-1 from master after distribute: 262144
+Greater[1]-1 from master after distribute: 262144
+Lower[1]-1 from master after distribute: 0
+Validation of process 0 after distribute has passed
+Validation of process 1 after distribute has passed
+
+
+Greater[0]-1 from master after distribute: 0
+Lower[0]-1 from master after distribute: 262144
+Greater[1]-1 from master after distribute: 262144
+Lower[1]-1 from master after distribute: 0
+Validation of process 1 after distribute has passed
+Validation of process 0 after distribute has passed
+Medians from pid1: 3.195789
+Medians from pid1: 1.830899
+Medians from pid1: 1.944014
+Vantage Points from pid1: (4.572000,54.061001)
+Vantage Points from pid1: (4.694000,53.118999)
+Vantage Points from pid1: (2.335000,51.028000)
+Construction of tree has ended!
+Worktime with MPI_Wtime: 0.751285 seconds

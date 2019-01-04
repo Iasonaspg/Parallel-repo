@@ -1,0 +1,26 @@
+size: 1048576 processes: 1
+Sequential tree creation has begun
+Sequential tree creation has been completed
+First 10 Vantage Points of the local tree:
+Local Vantage Point from local tree: (0.302000,51.285999)
+Local Vantage Point from local tree: (0.191000,2.996000)
+Local Vantage Point from local tree: (8.401000,54.021999)
+Local Vantage Point from local tree: (0.296000,1.353000)
+Local Vantage Point from local tree: (2.636000,3.853000)
+Local Vantage Point from local tree: (4.529000,1.472000)
+Local Vantage Point from local tree: (0.751000,52.917999)
+Local Vantage Point from local tree: (0.480000,0.960000)
+Local Vantage Point from local tree: (1.687000,1.492000)
+Local Vantage Point from local tree: (2.548000,0.761000)
+First 10 Medians of the local tree:
+Local Median from local tree: 3.165034
+Local Median from local tree: 1.954257
+Local Median from local tree: 5.193739
+Local Median from local tree: 1.271151
+Local Median from local tree: 0.931174
+Local Median from local tree: 1.826039
+Local Median from local tree: 2.682638
+Local Median from local tree: 0.638261
+Local Median from local tree: 0.846227
+Local Median from local tree: 1.172968
+Sequential Time elapsed: 2.588693, s

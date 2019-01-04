@@ -1,0 +1,270 @@
+size: 1048576 processes: 8
+Tree construction has begun!
+Vantage point at level-0: (8.6400003,52.9360008)
+
+
+Time elapsed: 0, 4070 s
+VALIDATION PASSED!
+Values greater than median: 524288
+Values equal to median: 1
+Values lower than median: 524287
+Median: 6.2093549
+
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Greater[0]-0 from master before distribute: 43161
+Lower[0]-0 from master before distribute: 87911
+Greater[1]-0 from master before distribute: 68618
+Lower[1]-0 from master before distribute: 62454
+Greater[2]-0 from master before distribute: 68740
+Lower[2]-0 from master before distribute: 62332
+Greater[3]-0 from master before distribute: 68724
+Lower[3]-0 from master before distribute: 62348
+Greater[4]-0 from master before distribute: 68843
+Lower[4]-0 from master before distribute: 62229
+Greater[5]-0 from master before distribute: 68860
+Lower[5]-0 from master before distribute: 62212
+Greater[6]-0 from master before distribute: 68745
+Lower[6]-0 from master before distribute: 62327
+Greater[7]-0 from master before distribute: 68597
+Lower[7]-0 from master before distribute: 62475
+Distribution is starting
+Distribution has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Validation of process 4 after distribute has passed
+Validation of process 5 after distribute has passed
+Validation of process 6 after distribute has passed
+Validation of process 1 after distribute has passed
+Validation of process 2 after distribute has passed
+Validation of process 7 after distribute has passed
+
+
+Greater[0]-0 from master after distribute: 0
+Lower[0]-0 from master after distribute: 131072
+Greater[1]-0 from master after distribute: 0
+Lower[1]-0 from master after distribute: 131072
+Greater[2]-0 from master after distribute: 0
+Lower[2]-0 from master after distribute: 131072
+Greater[3]-0 from master after distribute: 0
+Lower[3]-0 from master after distribute: 131072
+Greater[4]-0 from master after distribute: 131072
+Lower[4]-0 from master after distribute: 0
+Greater[5]-0 from master after distribute: 131072
+Lower[5]-0 from master after distribute: 0
+Greater[6]-0 from master after distribute: 131072
+Lower[6]-0 from master after distribute: 0
+Greater[7]-0 from master after distribute: 131072
+Lower[7]-0 from master after distribute: 0
+Validation of process 3 after distribute has passed
+Validation of process 0 after distribute has passed
+Vantage point at level-1: (8.5240002,51.4109993)
+Vantage point at level-1: (1.2660000,54.3199997)
+
+
+Time elapsed: 0, 5492 s
+VALIDATION PASSED!
+Values greater than median: 262144
+Values equal to median: 1
+Values lower than median: 262143
+Median: 4.9501667
+
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+
+
+Time elapsed: 0, 5093 s
+VALIDATION PASSED!
+Values greater than median: 262144
+Values equal to median: 1
+Values lower than median: 262143
+Median: 2.0560393
+
+Greater[0]-1 from master before distribute: 66906
+Lower[0]-1 from master before distribute: 64166
+Greater[1]-1 from master before distribute: 65157
+Lower[1]-1 from master before distribute: 65915
+Greater[2]-1 from master before distribute: 65164
+Lower[2]-1 from master before distribute: 65908
+Greater[3]-1 from master before distribute: 64917
+Lower[3]-1 from master before distribute: 66155
+Distribution is starting
+Distribution from slave has been completed
+Greater[0]-1 from master before distribute: 43503
+Lower[0]-1 from master before distribute: 87569
+Greater[1]-1 from master before distribute: 72150
+Lower[1]-1 from master before distribute: 58922
+Greater[2]-1 from master before distribute: 71706
+Lower[2]-1 from master before distribute: 59366
+Greater[3]-1 from master before distribute: 74785
+Lower[3]-1 from master before distribute: 56287
+Distribution is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution from slave is starting
+Distribution has been completed
+Distribution has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Validation of process 2 after distribute has passed
+Validation of process 2 after distribute has passed
+Validation of process 3 after distribute has passed
+
+
+Greater[0]-1 from master after distribute: 0
+Lower[0]-1 from master after distribute: 131072
+Greater[1]-1 from master after distribute: 0
+Lower[1]-1 from master after distribute: 131072
+Greater[2]-1 from master after distribute: 131072
+Lower[2]-1 from master after distribute: 0
+Greater[3]-1 from master after distribute: 131072
+Lower[3]-1 from master after distribute: 0
+
+
+Greater[0]-1 from master after distribute: 0
+Lower[0]-1 from master after distribute: 131072
+Greater[1]-1 from master after distribute: 0
+Lower[1]-1 from master after distribute: 131072
+Greater[2]-1 from master after distribute: 131072
+Lower[2]-1 from master after distribute: 0
+Greater[3]-1 from master after distribute: 131072
+Lower[3]-1 from master after distribute: 0
+Validation of process 1 after distribute has passed
+Validation of process 3 after distribute has passed
+Validation of process 0 after distribute has passed
+Vantage point at level-2: (3.1140001,54.7319984)
+Validation of process 1 after distribute has passed
+Vantage point at level-2: (2.4410000,51.1679993)
+Validation of process 0 after distribute has passed
+Vantage point at level-2: (4.0669999,50.5550003)
+Vantage point at level-2: (2.3959999,52.9430008)
+
+
+Time elapsed: 0, 5124 s
+
+
+Time elapsed: 0, 5043 s
+
+
+Time elapsed: 0, 4761 s
+VALIDATION PASSED!
+Values greater than median: 131072
+Values equal to median: 1
+Values lower than median: 131071
+Median: 1.6519457
+
+VALIDATION PASSED!
+Values greater than median: 131072
+Values equal to median: 1
+Values lower than median: 131071
+Distribution from slave is starting
+Greater[0]-2 from master before distribute: 63634
+Lower[0]-2 from master before distribute: 67438
+Greater[1]-2 from master before distribute: 67438
+Lower[1]-2 from master before distribute: 63634
+Distribution is starting
+VALIDATION PASSED!
+Values greater than median: 131072
+Values equal to median: 1
+Values lower than median: 131071
+Median: 1.3080965
+
+
+
+Time elapsed: 0, 5526 s
+Distribution from slave is starting
+Greater[0]-2 from master before distribute: 63704
+Lower[0]-2 from master before distribute: 67368
+Greater[1]-2 from master before distribute: 67368
+Lower[1]-2 from master before distribute: 63704
+Distribution is starting
+VALIDATION PASSED!
+Values greater than median: 131072
+Values equal to median: 1
+Values lower than median: 131071
+Median: 1.6236776
+
+Median: 1.8568039
+
+Distribution has been completed
+Distribution from slave has been completed
+Greater[0]-2 from master before distribute: 77502
+Lower[0]-2 from master before distribute: 53570
+Greater[1]-2 from master before distribute: 53570
+Lower[1]-2 from master before distribute: 77502
+Distribution is starting
+Distribution from slave has been completed
+Distribution has been completed
+Distribution from slave is starting
+Distribution from slave is starting
+Greater[0]-2 from master before distribute: 66584
+Lower[0]-2 from master before distribute: 64488
+Greater[1]-2 from master before distribute: 64488
+Lower[1]-2 from master before distribute: 66584
+Distribution is starting
+Distribution has been completed
+Distribution from slave has been completed
+Distribution from slave has been completed
+Distribution has been completed
+Validation of process 1 after distribute has passed
+
+
+Greater[0]-2 from master after distribute: 0
+Lower[0]-2 from master after distribute: 131072
+Greater[1]-2 from master after distribute: 131072
+Lower[1]-2 from master after distribute: 0
+Validation of process 0 after distribute has passed
+Validation of process 1 after distribute has passed
+Validation of process 1 after distribute has passed
+
+
+Greater[0]-2 from master after distribute: 0
+Lower[0]-2 from master after distribute: 131072
+Greater[1]-2 from master after distribute: 131072
+Lower[1]-2 from master after distribute: 0
+Validation of process 0 after distribute has passed
+
+
+Greater[0]-2 from master after distribute: 0
+Lower[0]-2 from master after distribute: 131072
+Greater[1]-2 from master after distribute: 131072
+Lower[1]-2 from master after distribute: 0
+Validation of process 0 after distribute has passed
+
+
+Greater[0]-2 from master after distribute: 0
+Lower[0]-2 from master after distribute: 131072
+Greater[1]-2 from master after distribute: 131072
+Lower[1]-2 from master after distribute: 0
+Validation of process 0 after distribute has passed
+Validation of process 1 after distribute has passed
+Medians from pid1: 6.209355
+Medians from pid1: 4.950167
+Medians from pid1: 2.056039
+Medians from pid1: 1.856804
+Medians from pid1: 1.623678
+Medians from pid1: 1.651946
+Medians from pid1: 1.308097
+Vantage Points from pid1: (8.640000,52.936001)
+Vantage Points from pid1: (8.524000,51.410999)
+Vantage Points from pid1: (1.266000,54.320000)
+Vantage Points from pid1: (4.067000,50.555000)
+Vantage Points from pid1: (3.114000,54.731998)
+Vantage Points from pid1: (2.396000,52.943001)
+Vantage Points from pid1: (2.441000,51.167999)
+Construction of tree has ended!
+Worktime with MPI_Wtime: 0.415546 seconds
