@@ -1,0 +1,32 @@
+size: 1048576 processes: 2
+Tree construction has begun!
+Vantage point at level-0: (9.3330002,52.8899994)
+
+
+Time elapsed: 0, 14445 s
+VALIDATION PASSED!
+Values greater than median: 524288
+Values equal to median: 1
+Values lower than median: 524287
+Median: 6.8760109
+
+Distribution from slave is starting
+Greater[0]-0 from master before distribute: 248824
+Lower[0]-0 from master before distribute: 275464
+Greater[1]-0 from master before distribute: 275464
+Lower[1]-0 from master before distribute: 248824
+Distribution is starting
+Distribution from slave has been completed
+Distribution has been completed
+
+
+Greater[0]-0 from master after distribute: 0
+Lower[0]-0 from master after distribute: 524288
+Greater[1]-0 from master after distribute: 524288
+Lower[1]-0 from master after distribute: 0
+Validation of process 1 after distribute has passed
+Validation of process 0 after distribute has passed
+Medians from pid1: 6.876011
+Vantage Points from pid1: (9.333000,52.889999)
+Construction of tree has ended!
+Worktime with MPI_Wtime: 1.372316 seconds
