@@ -1,8 +1,8 @@
 /*
 
 Parallel and Distributed Systems - Assignment 2
-Authors: Michail Iason Pavlidis (9015) - Christianou Georgia ()
-emails: michailpg@ece.auth.gr - 
+Authors: Michail Iason Pavlidis (9015) - Christianou Georgia (8419)
+emails: michailpg@ece.auth.gr - gkchristi@ece.auth.gr
 
 
 
