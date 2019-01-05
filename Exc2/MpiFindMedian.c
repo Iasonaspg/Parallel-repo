@@ -571,7 +571,7 @@ void slavePart(int processId,int partLength,float *numberPart,int size,float* po
 
 /* My functions */
 
-// Select vantage point and bcast it to your slaves
+// Selects vantage point and bcast it to your slaves
 void selectVP(int processId, float* points, int partLength, int k, float* vp){
     srand((processId+k+1)*time(0));
     int randPo = rand()%partLength;
@@ -582,7 +582,7 @@ void selectVP(int processId, float* points, int partLength, int k, float* vp){
     }
 }
 
-// Calculate distance from vantage point supporting dynamic dimension size
+// Calculates distance from vantage point supporting dynamic dimension size
 void calcDistance(float* points, int partLength, float* vp, float* distances){
     for (int i=0; i<partLength; i++){
         distances[i] = 0;
@@ -598,7 +598,7 @@ void calcDistance(float* points, int partLength, float* vp, float* distances){
     }
 }
 
-// Check for lower, greater and equal values to median
+// Checks for lower, greater and equal values to median, master gathers them. It also rearranges the array in order to be [low:equ:gre]
 void checkSums(float* distances,float* points, int partLength, float median, int* gtMedian, int* eqMedian, int* ltMedian, MPI_Comm sub_comm){
     int countMin=0;
     int countMax=0;
@@ -631,7 +631,7 @@ void checkSums(float* distances,float* points, int partLength, float median, int
     MPI_Gather(&countMax,1,MPI_INT,gtMedian,1,MPI_INT,0,sub_comm);
 }
 
-
+// Serial implmentation for checkSum
 void serialCheckSums(float* distances, float* points, int partLength, float median, int* countMin, int* countMax){
     int countEq=0;
     int *posEq = (int*)malloc(partLength*sizeof(int));
@@ -666,7 +666,7 @@ void serialCheckSums(float* distances, float* points, int partLength, float medi
 }
 
 
-// Validate the distribution of the points
+// Validates the distribution of the points
 void distrValidation(int sub_id, int sub_size, float* distances, float median, int partLength, MPI_Comm sub_comm){
     int flag = 1;
     // int sumFlags = 0;
@@ -863,14 +863,14 @@ void Distribute(float* points, int* ltMedian, int* gtMedian, int sub_id, int sub
 
             for (int i=0; i<slaveLength; i++){
                 for (int j=0; j<dimension; j++){
-                    points[j*partLength+i] = tempBuf[j*slaveLength + i];
+                    points[j*partLength+i] = tempBuf[j*slaveLength + i];    //Ensomatonoume ta stoixeia pou lavame
                 }
             }
         }
     }
 }
 
-// Swap Points based on "sorted" distances after partition
+// Swap Points based on "sorted" distances after partition, Too slow for big size arrays
 void swapPoints(float* points, float* distances, float* distances_bk, int partLength){
     int* aux = (int*)malloc(partLength*sizeof(int));
     int* flags = (int*)malloc(partLength*sizeof(int));
@@ -898,6 +898,7 @@ void swapPoints(float* points, float* distances, float* distances_bk, int partLe
     free(pointsAux);
 }
 
+// Creates local VP trees
 void serialVP(float *points, float *localVPs, float *localMedians, int size, int subSize, int index, int processId) 
 {
     if (subSize > 2) 
@@ -914,7 +915,7 @@ void serialVP(float *points, float *localVPs, float *localMedians, int size, int
         // printf("vantage point inside function: (%f,%f)\n",vp[0],vp[1]);
 
         for (int i=0; i<dimension; i++){
-            localVPs[i*size + index] = vp[i];
+            localVPs[i*size + index] = vp[i];   //store vp in the "tree"
         }
         
         float* distances = (float*)malloc(subSize*sizeof(float));      
@@ -931,15 +932,15 @@ void serialVP(float *points, float *localVPs, float *localMedians, int size, int
         // for (int i=0; i<size; i++){
         //     printf("points after median: %f\n",points[i]);
         // }
-        localMedians[index]=median;
+        localMedians[index]=median;     //store median in the "tree"
 
             
         free(distances);
         free(vp);
 
-        serialVP(points,localVPs,localMedians,size,countMin,index*2,processId);
+        serialVP(points,localVPs,localMedians,size,countMin,index*2,processId);     //left child
         
-        serialVP(&points[countMin],localVPs,localMedians,size,countMax,index*2+1,processId);
+        serialVP(&points[countMin],localVPs,localMedians,size,countMax,index*2+1,processId);    //right child
     }
 }
 
@@ -951,8 +952,8 @@ int main (int argc, char **argv)
     int processId,noProcesses,size,partLength;
     float median;
     float *points;
-    float* localVPs;
-    float* localMedians;
+    float* localVPs;      //VPs for local trees
+    float* localMedians;  //Medians for local trees
     size= (1<<atoi(argv[1]));
     MPI_Init (&argc, &argv);	/* starts MPI */
     MPI_Comm_rank (MPI_COMM_WORLD, &processId);	/* get current process id */
@@ -1014,17 +1015,17 @@ int main (int argc, char **argv)
             if (line2){
                 free(line2);
             }
-            // // End of reading data set      
+            // End of reading data set      
 
-            // // Scatter the global array to slaves
+            // Scatter the global array to slaves
             MPI_Scatter(dataX, partLength, MPI_FLOAT, points, partLength, MPI_FLOAT, 0, MPI_COMM_WORLD);
             MPI_Scatter(dataY, partLength, MPI_FLOAT, &points[partLength], partLength, MPI_FLOAT, 0, MPI_COMM_WORLD);
         }
         else
         {
             points = (float*)malloc(dimension*size*sizeof(float));  //Desmeuoyme xwro gia ton pinaka otan einai seiriako
-            localVPs = (float*)malloc(dimension*size*sizeof(float));
-            localMedians = (float*)malloc(size*sizeof(float));
+            localVPs = (float*)malloc(dimension*size*sizeof(float));    //Desmeuoyme xwro gia ta Vantage points kai tous medians.
+            localMedians = (float*)malloc(size*sizeof(float));      //Zitame mia thesi parapanw apo auto pou xreiazomaste giati paraleipoume tin thesi 0
             // generateNumbers(points,size,processId); //Arxikopoioume ton pinaka me times
             
             // Read data set
@@ -1103,7 +1104,7 @@ int main (int argc, char **argv)
     else
     {
         MPI_Recv(&partLength,1,MPI_INT,0,1,MPI_COMM_WORLD,&Stat);   //kodikas pou trexei se kathe paidi
-        points=(float*)malloc(dimension*partLength*sizeof(float));        //Oi metavlhtes einai topikes se kathe node
+        points=(float*)malloc(dimension*partLength*sizeof(float));        //Oi metavlhtes einai topikes se kathe proc
         MPI_Scatter(dataX, partLength, MPI_FLOAT, points, partLength, MPI_FLOAT, 0, MPI_COMM_WORLD);
         MPI_Scatter(dataY, partLength, MPI_FLOAT, &points[partLength], partLength, MPI_FLOAT, 0, MPI_COMM_WORLD);
         // generateNumbers(points,partLength,processId);
@@ -1113,11 +1114,11 @@ int main (int argc, char **argv)
         
     int sub_id, sub_size,masters_id, masters_size;
     int threshold = log2(noProcesses); //depth of the tree
-    float* sharedVPs = (float*)malloc((noProcesses)*dimension*sizeof(float));
-    float* sharedMedians = (float*)malloc((noProcesses)*sizeof(float));
-    localVPs = (float*)malloc(partLength*dimension*sizeof(float));
+    float* sharedVPs = (float*)malloc((noProcesses)*dimension*sizeof(float));   //Pinakes gia ta vantage points kai tous medians tou koinou dentrou
+    float* sharedMedians = (float*)malloc((noProcesses)*sizeof(float));     //Zitame mia thesi parapanw giati paraleipoume ti thesi 0
+    localVPs = (float*)malloc(partLength*dimension*sizeof(float));          ////Pinakes gia ta vantage points kai tous medians tou local dentrou
     localMedians = (float*)malloc(partLength*sizeof(float));
-    int start = 0;
+    int start = 0;  //counter gia tin apothikeusi sto dentro
  
     MPI_Barrier(MPI_COMM_WORLD);
     if (processId == 0){
@@ -1135,11 +1136,11 @@ int main (int argc, char **argv)
         MPI_Comm_rank(sub_comm, &sub_id);
         MPI_Comm_size(sub_comm, &sub_size);
         int *gtMedian = (int*)malloc(sub_size*sizeof(int)); 
-        int *eqMedian = (int*)malloc(sub_size*sizeof(int));
+        int *eqMedian = (int*)malloc(sub_size*sizeof(int));     //Pinakes pou tha deixnoun posa low/equ/gre tou median exei to kathe processe
         int *ltMedian = (int*)malloc(sub_size*sizeof(int));
         
         if (sub_id == 0){
-            MPI_Comm_split(MPI_COMM_WORLD, 0, processId, &masters_comm);
+            MPI_Comm_split(MPI_COMM_WORLD, 0, processId, &masters_comm);        // Ftiaxnoume communicator mono gia tous masters
 
             // MPI_Comm_rank(masters_comm, &masters_id);
 
@@ -1159,7 +1160,7 @@ int main (int argc, char **argv)
             selectVP(processId,points,partLength,k,vp);
             MPI_Bcast(vp,dimension,MPI_FLOAT,0,sub_comm);
             for (int j=0; j<dimension; j++){
-                MPI_Gather(&vp[j], 1, MPI_FLOAT, &sharedVPs[j*(noProcesses-1) + start + 1], 1, MPI_FLOAT, 0, masters_comm);
+                MPI_Gather(&vp[j], 1, MPI_FLOAT, &sharedVPs[j*(noProcesses-1) + start + 1], 1, MPI_FLOAT, 0, masters_comm);  // PID=0 gathers the VPs from masters
             }
             printf("Vantage point at level-%d: (%.7f,%.7f)\n",k, vp[0], vp[1]);
             float* distances = (float*)malloc(partLength*sizeof(float));
@@ -1172,12 +1173,12 @@ int main (int argc, char **argv)
             // for (int p=0; p<partLength; p++){
             //     printf("Distance from master before median: %.7f\n",distances[p]);
             // }
-            median=masterPart(sub_size,sub_id,size/(1<<k),partLength,distances,points,sub_comm);
-            MPI_Bcast(&median,1,MPI_FLOAT,0,sub_comm);
-            MPI_Gather(&median, 1, MPI_FLOAT, &sharedMedians[start + 1], 1, MPI_FLOAT, 0, masters_comm);
-            start += (1<<k);
+            median=masterPart(sub_size,sub_id,size/(1<<k),partLength,distances,points,sub_comm);        // Vriskoume median
+            MPI_Bcast(&median,1,MPI_FLOAT,0,sub_comm);                                                  // Bcast him to every slave in the team
+            MPI_Gather(&median, 1, MPI_FLOAT, &sharedMedians[start + 1], 1, MPI_FLOAT, 0, masters_comm);  // PID=0 gathers the medians from masters
+            start += (1<<k);                                                                               // Se kathe epipedo exoume 2^k medians/VPs
             printf("Median: %.7f\n\n",median);  // Allagi gia float
-            checkSums(distances,points,partLength,median,gtMedian,eqMedian,ltMedian,sub_comm);
+            checkSums(distances,points,partLength,median,gtMedian,eqMedian,ltMedian,sub_comm);          // Elegxoume ek neou ta sums kai kanoume rearrange an xreiazetai
             //swapPoints(points,distances,distances_bk,partLength,dimension);
             // for (int p=0; p<partLength; p++){
             //     printf("Point from master before distribute: (%.7f,%.7f)\n",points[p],points[partLength + p]);
@@ -1192,9 +1193,9 @@ int main (int argc, char **argv)
                 printf("Lower[%d]-%d from master before distribute: %d\n",p,k,ltMedian[p]);
             }
             printf("Distribution is starting\n");
-            Distribute(points,ltMedian,gtMedian,sub_id,sub_size,partLength,sub_comm);
+            Distribute(points,ltMedian,gtMedian,sub_id,sub_size,partLength,sub_comm);       // Anakatanemoume ta points gia na plhrountai ta criteria mas
             printf("Distribution has been completed\n");
-            calcDistance(points, partLength, vp, distances);
+            calcDistance(points, partLength, vp, distances);                                // Ypologizoume ta nea distances
             checkSums(distances,points,partLength,median,gtMedian,eqMedian,ltMedian,sub_comm);
             // for (int p=0; p<partLength; p++){
             //     printf("Point from master after distribute: (%.7f,%.7f)\n",points[p],points[partLength + p]);
@@ -1207,7 +1208,7 @@ int main (int argc, char **argv)
                 printf("Greater[%d]-%d from master after distribute: %d\n",p,k,gtMedian[p]);
                 printf("Lower[%d]-%d from master after distribute: %d\n",p,k,ltMedian[p]);
             }
-            distrValidation(sub_id,sub_size,distances,median,partLength,sub_comm);
+            distrValidation(sub_id,sub_size,distances,median,partLength,sub_comm);      // Validation
             free(vp);
             free(distances);
             //free(distances_bk);
@@ -1260,10 +1261,10 @@ int main (int argc, char **argv)
         
     }
 
-    serialVP(points,localVPs,localMedians,partLength,partLength,1,processId);
+    serialVP(points,localVPs,localMedians,partLength,partLength,1,processId);       // Ftiaxnoume ta topika trees
 
 
-    MPI_Bcast(sharedVPs,noProcesses*dimension,MPI_FLOAT,0,MPI_COMM_WORLD);
+    MPI_Bcast(sharedVPs,noProcesses*dimension,MPI_FLOAT,0,MPI_COMM_WORLD);          // Bcast to koino dentro stous pantes
     MPI_Bcast(sharedMedians,noProcesses,MPI_FLOAT,0,MPI_COMM_WORLD);
 
     
