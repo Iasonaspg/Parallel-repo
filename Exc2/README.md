@@ -36,7 +36,8 @@
 ## Εκτέλεση κώδικα
 
 Για να εκτελέσετε τον κώδικα τοπικά στον υπολογιστή σας:
-`mpicc MpiFindMedian.c -o MpiFindMedian -lm`
-`mpiexec -np <noProcesses> MpiFindMedian <argument>`
+
+    mpicc MpiFindMedian.c -o MpiFindMedian -lm
+    mpiexec -np <noProcesses> MpiFindMedian <argument>
 
 Ο κώδικας σαν είσοδο παίρνει μόνο το μέγεθος του πίνακα το οποίο θα είναι δύναμη του 2. (20 -> 2^20)
