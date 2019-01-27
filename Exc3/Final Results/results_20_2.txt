@@ -1,0 +1,7 @@
+Side length of each box: 0.250000
+Time elapsed for generating points: 0.006763 seconds
+Elements: 131072
+Time elapsed for hashing the total number of points on host: 0.039963 seconds
+Time elapsed for knn on device: 13.028254 seconds
+Time elapsed for brute force knn on device: 36.152807 seconds
+Validation PASSED
