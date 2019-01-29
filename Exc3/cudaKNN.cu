@@ -146,7 +146,7 @@ __global__ void validate(float* queries, float* corpus, int len, int* flag, floa
             }
         }
         // printf("Minimum distance for query[%d]: %f\n",j,min);
-        if (fabsf(min-distances[j]) > 0.000001){
+        if (min != distances[j]) {
             *flag = 1;
         }
     }
