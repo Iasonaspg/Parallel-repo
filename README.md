@@ -1,2 +1,2 @@
 # Parallel-repo
-This is a repo with my solutions to homework assignments about parallel systems. 
+This is a repo with programs that I designed to run in parallel 
